@@ -1,0 +1,276 @@
+body {
+	margin: 0;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	background: linear-gradient(125deg, #faeadf, #d1e3eb) ;
+}
+
+header {
+    width: 100%;
+    height: 45vh;
+    background-color: silver;
+    text-align: center;
+    color: white;
+    background-image: url(images/background.jpg);
+    background-size: 100%;
+    box-shadow: 0 0 5px 8px silver;
+    position: relative;
+}
+
+body h1 {
+	margin-top: 60px;
+	text-align: center;
+}
+
+#top-logo, #bot-logo {
+    display: block;
+    
+}
+
+#top-logo {
+    padding-top: 10vh;
+    font-size: 15vh;
+    line-height: 90%;
+}
+
+#top-logo:after {
+    content: "";
+    display: block;
+    width: 50vh;
+    height: 0.4vh;
+    margin: 0 auto 2vh;
+    background-color: white;
+}
+
+#bot-logo {
+    font-size: 10vh;
+    line-height: 80%;
+}
+
+.categories {
+	list-style: none; 
+	background-color: silver;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.category-wrapper {
+	margin: 0;
+	width: 25%;
+	height: auto;
+	background-color: silver;
+	float: left;
+	background: linear-gradient(90deg, #c9e2f091, #ccc9c991, #c9e2f091);
+}
+
+.category {
+	padding: 2vh;
+	height: auto;
+	overflow: hidden;
+	display: block;
+	position: relative;
+	text-align: center;
+	font-family: 'Lobster', cursive;
+	font-size: 2.5vh;
+	line-height: 2.3vh;
+	text-decoration: none;
+	color: #111;
+}
+
+.products {
+	list-style: none;
+	margin: 2% 5% 0 5%;
+	padding: 0;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	
+}
+
+.product-wrapper {
+	margin: 20px 20px 40px 0px;
+	width: 100%;
+	transition: all .5s;
+}
+
+.product {
+	border: 3px solid #1b1b1b91;
+	box-shadow: 0 0 6px 6px rgb(189, 185, 185);
+	border-radius: 3px;
+	position: relative;
+	background: #fff;
+	padding: 10px 10px 0 10px;
+	margin: 0 5% 30px 0;
+	text-decoration: none;
+	color: #474747;
+	z-index: 0;
+	height: 100%;
+	text-align: center;
+	overflow: hidden;
+}
+
+.product-photo {
+	position: relative;
+	height: auto;
+	
+	/* padding-bottom: 100%; */
+	/* overflow: hidden; */
+}
+
+.product-photo img {
+	height: auto;
+	width: auto;
+	max-height: 100%;
+	max-width: 100%;
+	transition: all .5s;
+	border-radius: 5px;
+	box-shadow: 0 0 3px 3px rgb(133, 130, 130);
+}
+
+.product:hover .product-photo img {
+	transform: scale(1.05);
+}
+
+.product-wrapper:hover {
+	transform: scale(1.05);
+}
+
+.product p {
+	display: block;
+	font-size: 2.3vh;
+	line-height: 2.3vh;
+	height: auto;
+	margin: 0;
+	padding-top: 20px;
+}
+
+.buy {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding-top: 30px;
+	position: relative;
+	font-size: 2.5vh;
+}
+
+.price, .buy a {
+	position: relative;
+	line-height: 2.3vh;
+	padding: 5px;
+}
+
+.price {
+	border: 1px solid black;
+}
+
+.buy a {
+	border: 2px solid black;
+	background-color: #111;
+	color: #fff;
+	text-decoration: none;
+}
+
+.buy a:hover {
+	background-color: #434040;
+	border: 2px solid #434040;
+	transition: all .3s;
+	transform: scale(1.05);
+}
+
+.categories .category-wrapper .category:hover {
+	box-shadow: 0 0 3px 3px #1b1b1b91;
+	background-color: #969fa391;
+	transition: all .4s;
+	border-radius: 3px;
+}
+
+.footer-container {
+	margin-top: 5vh;
+	width: 100%;
+	height: 15vh;
+	position: relative;
+	background: linear-gradient(90deg, #b6bbc491, #cacccc91, #adb4c291);
+	box-shadow: 4px 0 0 3px #adb4c291;
+}
+
+.app-block {
+	margin: 0;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	padding: 3vh 0 0 20%;
+	justify-content: flex-start;
+}
+
+.app-block li a img {
+	width: 7vh;
+	height: auto;
+	margin-right: 3vh;
+}
+
+.app-block li a img:hover {
+	transform: scale(1.15);
+	transition: all .3s;
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+	.product-wrapper {
+		width: 100%;
+	}
+	.products {
+		margin-right: -2%;
+	}
+
+	.product p {
+		font-size: 18px;
+	}
+
+	.category-wrapper {
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 450px) {
+	.product-wrapper {
+		width: 50%;
+	}
+
+}
+
+@media only screen and (min-width: 768px) {
+	.product-wrapper {
+		width: 33.333%;
+	}
+
+}
+
+@media only screen and (min-width: 1000px) {
+	.product-wrapper {
+		width: 23%;
+	}
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+	.product-wrapper {
+		width: 100%;
+	}
+	.product-wrapper {
+		margin-right: -2%;
+	}
+
+	.products {
+		margin-right: -3%;
+	}
+
+	.category-wrapper {
+		width: 100%;
+	}
+}

@@ -12,7 +12,7 @@ header {
     color: white;
     background-image: url(images/background.jpg);
     background-size: 100%;
-    box-shadow: 0 0 5px 8px silver;
+	border-bottom: 1px solid silver;
     position: relative;
 }
 
@@ -87,7 +87,7 @@ body h1 {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
-	
+	height: auto;
 }
 
 .product-wrapper {
@@ -140,20 +140,26 @@ body h1 {
 
 .product p {
 	display: block;
+	position: relative;
 	font-size: 2.3vh;
 	line-height: 2.3vh;
 	height: auto;
 	margin: 0;
-	padding-top: 20px;
+	padding-top: 2vh;
+	margin-bottom: 3vh;
 }
 
 .buy {
-	width: 100%;
+	height: auto;
+	width: auto;
 	display: flex;
-	justify-content: center;
-	padding-top: 30px;
-	position: relative;
+	position: absolute;
+	bottom: 0;
 	font-size: 2.5vh;
+	padding-bottom: 2vh;
+	padding-right: 3vw;
+	padding-left: 8vh;
+	
 }
 
 .price, .buy a {
@@ -193,7 +199,7 @@ body h1 {
 	height: 15vh;
 	position: relative;
 	background: linear-gradient(90deg, #b6bbc491, #cacccc91, #adb4c291);
-	box-shadow: 4px 0 0 3px #adb4c291;
+	border-top: 1px solid #adb4c291;
 }
 
 .app-block {
@@ -217,9 +223,56 @@ body h1 {
 	transition: all .3s;
 }
 
+.hidden {
+    display: none;
+}
+
+form {
+    padding: 10px 20px 20px;
+    background-color: #fff;
+    max-width: 320px;
+    margin: auto;
+    position: relative;
+}
+
+form input {
+    font-size: 14px;
+    width: 80%;
+    margin-bottom: 3%;
+    margin-top: 5px;
+    line-height: 150%;
+    box-shadow: 0 0 5px 3px silver;
+}
+
+form .order {
+    background-color: #1f1f1f;
+    color: white;
+    border: 0px;
+    border-radius: 0;
+
+    font-size: 16px;
+    line-height: 150%;
+    
+    width: 100px;
+    height: auto;
+    line-height: 160%;
+
+    position: absolute;
+    bottom: 2%;
+    right: 40%;
+}
+ form .order:hover {
+    background-color: #434040;
+    box-shadow: 0 0 5px 5px silver;
+ }
+
 @media only screen 
   and (min-device-width: 375px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
+	#top-logo:after {
+		width: 37vh;
+	}
+	
 	.product-wrapper {
 		width: 100%;
 	}

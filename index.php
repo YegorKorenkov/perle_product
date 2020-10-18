@@ -87,12 +87,12 @@ include 'helpers/product.php';
                     </a>
                 </li>
                 <li>
-                    <a>
+                    <a href="https://t.me/perle_product">
                         <img src="images/telegram.svg">
                     </a>
                 </li>
                 <li>
-                    <a>
+                    <a href="https://invite.viber.com/?g2=AQBxKz3uAMlQS0wdI5e%2FOOkT4R7N0Ruklwziuh0tMQAgvZx%2FM8rz00GNMaARAC7e">
                         <img src="images/viber.svg">
                     </a>
                 </li>
